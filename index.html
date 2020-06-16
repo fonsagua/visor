@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width"
+    />
+    <title>
+      Visor para el Seguimiento de indicadores de desarrollo relacionados con el agua en comunidades
+      rurales de los municipios de NASMAR
+    </title>
+
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/leaflet.groupedlayercontrol.min.css" />
+    <link rel="stylesheet" href="css/L.Control.Sidebar.css" />
+    <link rel="stylesheet" href="css/label.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/my_label.css" />
+
+    <link rel="stylesheet" href="css/leaflet-search.css" />
+
+    <script src="js/ext/leaflet.js"></script>
+    <script src="js/ext/leaflet-hash.js"></script>
+    <script src="js/ext/label.js"></script>
+    <script src="js/ext/leaflet.groupedlayercontrol.js"></script>
+    <script src="js/ext/L.Control.Sidebar.js"></script>
+    <!-- <script src="js/ext/L.Control.Button.js"></script> -->
+    <script src="js/ext/leaflet.geometryutil.js"></script>
+    <!-- <script src="js/ext/leaflet.almostover.js"></script> -->
+
+    <script src="js/ext/jquery-1.12.0.min.js"></script>
+    <script src="js/ext/underscore-min.js"></script>
+    <script src="js/ext/backbone-min.js"></script>
+    <script src="js/ext/Autolinker.min.js"></script>
+    <script src="js/ext/leaflet-search/leaflet-search.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="http://nasmar.org"><img class="logo-header" src="images/logo.jpg" /></a>
+      <ul class="sidebarMenuInner">
+        <li>
+          <span>
+            Visor para el Seguimiento de indicadores de desarrollo relacionados con el agua en
+            comunidades rurales de los municipios de NASMAR
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="center" class="main center">
+      <div id="helpsidebar">
+        <p>
+          Bienvenida/o al mapa de seguimiento de indicadores de desarrollo relacionados con el agua
+          y saneamiento de la Mancomunidad de Municipios del Sur NASMAR.
+        </p>
+
+        <p>
+          Explore el mapa general y active la capa de Saneamiento o Abastecimiento para visualizar
+          el grado de cobertura de cada servicio en % de familias y viviendas atendidas. A mayor
+          intensidad de color, mayor grado de cobertura.
+        </p>
+
+        <p>
+          Amplíe el mapa con la lupa, y haga click sobre las comunidades, para conocer la ficha de
+          información concreta de cada una. La información inicial corresponde a datos de 2019. Se
+          irá incorporando más información según avance el proceso de verificación de los datos.
+        </p>
+        <p>
+          Puede ocultar esta ventana pulsando en la
+          <strong style="padding: 0 1px;">X</strong>
+          de la cabecera.
+        </p>
+        <h2>Indicadores</h2>
+        <p>
+          Se recogen datos de situación de las comunidades rurales a finales de 2019 con los
+          primeros indicadores de este sistema de monitoreo:
+        </p>
+        <ul>
+          <li>
+            Abastecimiento: Porcentaje de familias sobre el total de familias de la comunidad, que
+            disponen de acceso a un sistema de abastecimiento de agua.
+          </li>
+          <li>
+            Saneamiento: Porcentaje de viviendas sobre el total de viviendas de la comunidad, con
+            algún sistema de saneamiento, tales como letrinas, o sistemas comunitarios de
+            saneamiento.
+          </li>
+        </ul>
+
+        <p>
+          La información inicial corresponde a datos de 2019. Se irá incorporando más información
+          según avance el proceso de verificación de los datos.
+        </p>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <div class="footer">
+      <span style=" padding: 15px 30px; position: absolute;">
+        Generando oportunidades de inclusión social
+      </span>
+      <div style="position: absolute; right: 5px;">
+        <span style="">Gracias al apoyo financiero de</span>
+        <a href="https://cooperacion.xunta.gal/">
+          <img style=" height: 55px; vertical-align: middle;" src="images/financiador.png" />
+        </a>
+      </div>
+    </div>
+
+    <script src="js/restackLayers.js"></script>
+    <script src="js/styles.js"></script>
+    <script src="js/popups.js"></script>
+    <script src="js/LayerConfig.js"></script>
+    <script src="js/BaseMap.js"></script>
+    <script src="js/elementSearcher.js"></script>
+    <script src="js/TOC.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

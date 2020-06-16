@@ -1,0 +1,26 @@
+{
+"type": "FeatureCollection",
+"name": "Microcuencas_Points",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "nombre": "Sampile - Río Namasigüe" }, "geometry": { "type": "Point", "coordinates": [ -87.13332, 13.19642 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - Quebradas Panasacaran" }, "geometry": { "type": "Point", "coordinates": [ -87.50375, 13.66579 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - Quebrada La Laguna" }, "geometry": { "type": "Point", "coordinates": [ -87.47803, 13.67991 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - Quebrada La Curagua" }, "geometry": { "type": "Point", "coordinates": [ -87.49435, 13.62368 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - Quebrada El Salto" }, "geometry": { "type": "Point", "coordinates": [ -87.47236, 13.60459 ] } },
+{ "type": "Feature", "properties": { "nombre": "Choluteca - Estero Rio Agua Caliente" }, "geometry": { "type": "Point", "coordinates": [ -87.31853, 13.39449 ] } },
+{ "type": "Feature", "properties": { "nombre": "Choluteca - Estero Rio Laure" }, "geometry": { "type": "Point", "coordinates": [ -87.3812, 13.44535 ] } },
+{ "type": "Feature", "properties": { "nombre": "Choluteca - Esteros 1" }, "geometry": { "type": "Point", "coordinates": [ -87.41385, 13.23535 ] } },
+{ "type": "Feature", "properties": { "nombre": "Choluteca - Esteros 2" }, "geometry": { "type": "Point", "coordinates": [ -87.40155, 13.30981 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - Guacirope Baja" }, "geometry": { "type": "Point", "coordinates": [ -87.5466, 13.58798 ] } },
+{ "type": "Feature", "properties": { "nombre": "Choluteca - Monjaras" }, "geometry": { "type": "Point", "coordinates": [ -87.36528, 13.18975 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - Nacaome" }, "geometry": { "type": "Point", "coordinates": [ -87.52762, 13.45828 ] } },
+{ "type": "Feature", "properties": { "nombre": "Choluteca - Quebrada Grande" }, "geometry": { "type": "Point", "coordinates": [ -87.2438, 13.36252 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - Rio Simisiran" }, "geometry": { "type": "Point", "coordinates": [ -87.461, 13.47435 ] } },
+{ "type": "Feature", "properties": { "nombre": "Sampile - Sampile Baja" }, "geometry": { "type": "Point", "coordinates": [ -87.28819, 13.18245 ] } },
+{ "type": "Feature", "properties": { "nombre": "Sampile - Sampile Centro" }, "geometry": { "type": "Point", "coordinates": [ -87.20698, 13.2322 ] } },
+{ "type": "Feature", "properties": { "nombre": "Sampile - Sampile Esteros 1" }, "geometry": { "type": "Point", "coordinates": [ -87.25036, 13.08912 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - San Francisco - Langue" }, "geometry": { "type": "Point", "coordinates": [ -87.62626, 13.6315 ] } },
+{ "type": "Feature", "properties": { "nombre": "Nacaome - Baja Grande Nacaome" }, "geometry": { "type": "Point", "coordinates": [ -87.41648, 13.58754 ] } }
+]
+}

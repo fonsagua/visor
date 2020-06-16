@@ -1,0 +1,239 @@
+[
+    {
+        "id": "Municipios",
+        "shp": "Municipios",
+        "filter": "nombre",
+        "searchByFields": ["nombre"],
+        "searchByLabel": "Municipio",
+        "fields": {
+            "nombre": {"long_name": "Nombre", "unit": "", "domain": "texto", "order": 0}
+        },
+        "toc": {
+            "group": "Cartografía",
+            "label": "Municipios<table class='legend-table'><tbody><tr><td style='text-align: center;'><img src='markers/municipios_nasmar_visor_0_Amapala0.png'></td><td>Amapala</td></tr><tr><td style='text-align: center;'><img src='markers/municipios_nasmar_visor_0_ElTriunfo1.png'></td><td>El Triunfo</td></tr><tr><td style='text-align: center;'><img src='markers/municipios_nasmar_visor_0_Goascoran2.png'></td><td>Goascoran</td></tr><tr><td style='text-align: center;'><img src='markers/municipios_nasmar_visor_0_Marcovia3.png'></td><td>Marcovia</td></tr><tr><td style='text-align: center;'><img src='markers/municipios_nasmar_visor_0_Nacaome4.png'></td><td>Nacaome</td></tr><tr><td style='text-align: center;'><img src='markers/municipios_nasmar_visor_0_Namasigue5.png'></td><td>Namasigue</td></tr><tr><td style='text-align: center;'><img src='markers/municipios_nasmar_visor_0_SanLorenzo6.png'></td><td>San Lorenzo</td></tr></tbody></table>"
+        },
+        "style": "doStyleMunicipios"
+    },
+    {
+        "id": "Microcuencas",
+        "shp": "Microcuencas",
+        "filter": "nombre",
+        "searchByFields": ["nombre"],
+        "searchByLabel": "Microcuenca",
+        "fields": {
+            "nombre": {"long_name": "Nombre", "unit": "", "domain": "texto", "order": 0}
+        },
+        "toc": {
+            "group": "Cartografía",
+            "label": "Microcuencas<table class='legend-table'><tbody><tr><td style='text-align: center;'><img src='markers/microcuencas_legend.png'></td><td></td></tr></tbody></table>"
+        },
+        "style": "doStyleMicrocuencas",
+
+        "farZoom": 12
+    },
+    {
+        "id": "Microcuencas_Points",
+        "shp": "Microcuencas_Points",
+        "filter": "nombre",
+        "fields": {"nombre": "label"},
+        "pointToLayer": "doPointToLayerMicrocuencas_Points",
+        "farZoom": 12
+    },
+
+    {
+        "id": "Saneamiento",
+        "initialVisible": false,
+        "usersControlsVisibility": false,
+        "shp": "Comunidades",
+        "filter": "nombre",
+        "searchByFields": ["nombre", "codigo"],
+        "searchByLabel": "Comunidad",
+        "toc": {
+            "group": "Comunidades",
+            "label": "Saneamiento<table class='legend-table'><tbody><tr><td style='text-align: center;'><img src='markers/saneamiento_legend_70.png'></td><td>Mayor 70%</td></tr><tr><td style='text-align: center;'><img src='markers/saneamiento_legend_70_30.png'></td><td>Entre 70% y 30%</td></tr><tr><td style='text-align: center;'><img src='markers/saneamiento_legend_30.png'></td><td>Menor 30%</td></tr></tbody></table>"
+        },
+        "fields": {
+            "codigo": {
+                "long_name": "Código",
+                "unit": "",
+                "domain": "texto",
+                "order": 0
+            },
+            "nombre": {
+                "long_name": "Nombre",
+                "unit": "",
+                "domain": "texto",
+                "order": 1
+            },
+            "n_depart": {
+                "long_name": "Departamento",
+                "unit": "",
+                "domain": "texto",
+                "order": 2
+            },
+            "n_muni": {
+                "long_name": "Municipio",
+                "unit": "",
+                "domain": "texto",
+                "order": 3
+            },
+            "n_aldea": {
+                "long_name": "Aldea",
+                "unit": "",
+                "domain": "texto",
+                "order": 4
+            },
+            "pob_total": {
+                "long_name": "Población",
+                "unit": "",
+                "domain": "texto",
+                "order": 5
+            },
+            "categoria": {
+                "long_name": "Categoría",
+                "unit": "",
+                "domain": "texto",
+                "order": 6
+            },
+            "fam_total": {
+                "long_name": "Número de familias",
+                "unit": "",
+                "domain": "texto",
+                "order": 7
+            },
+            "viv_total": {
+                "long_name": "Número de viviendas",
+                "unit": "",
+                "domain": "texto",
+                "order": 8
+            },
+            "ano_pgirh": {
+                "long_name": "Año PGIRH",
+                "unit": "",
+                "domain": "texto",
+                "order": 9
+            },
+            "san_total": {
+                "long_name": "Viviendas con Saneamiento",
+                "unit": "",
+                "domain": "texto",
+                "order": 10
+            },
+            "abas_total": {
+                "long_name": "Familias con Abastecimiento",
+                "unit": "",
+                "domain": "texto",
+                "order": 10
+            },
+            "junta_agua": {
+                "long_name": "¿Hay junta de agua?",
+                "unit": "",
+                "domain": "texto",
+                "order": 10
+            }
+        },
+        "onEachFeature": "pop_Comunidades",
+        "pointToLayer": "doPointToLayerComunidadesSan"
+    },
+    {
+        "id": "Abastecimiento",
+        "initialVisible": false,
+        "usersControlsVisibility": false,
+        "shp": "Comunidades",
+        "filter": "nombre",
+        "toc": {
+            "group": "Comunidades",
+            "label": "Abastecimiento<table class='legend-table'><tbody><tr><td style='text-align: center;'><img src='markers/abastecimiento_legend_80.png'></td><td>Mayor 80%</td></tr><tr><td style='text-align: center;'><img src='markers/abastecimiento_legend_80_50.png'></td><td>Entre 80% y 50%</td></tr><tr><td style='text-align: center;'><img src='markers/abastecimiento_legend_50.png'></td><td>Menor 50%</td></tr></tr></tbody></table>"
+        },
+        "fields": {
+            "codigo": {
+                "long_name": "Código",
+                "unit": "",
+                "domain": "texto",
+                "order": 0
+            },
+            "nombre": {
+                "long_name": "Nombre",
+                "unit": "",
+                "domain": "texto",
+                "order": 1
+            },
+            "n_depart": {
+                "long_name": "Departamento",
+                "unit": "",
+                "domain": "texto",
+                "order": 2
+            },
+            "n_muni": {
+                "long_name": "Municipio",
+                "unit": "",
+                "domain": "texto",
+                "order": 3
+            },
+            "n_aldea": {
+                "long_name": "Aldea",
+                "unit": "",
+                "domain": "texto",
+                "order": 4
+            },
+            "pob_total": {
+                "long_name": "Población",
+                "unit": "",
+                "domain": "texto",
+                "order": 5
+            },
+            "categoria": {
+                "long_name": "Categoría",
+                "unit": "",
+                "domain": "texto",
+                "order": 6
+            },
+            "fam_total": {
+                "long_name": "Número de familias",
+                "unit": "",
+                "domain": "texto",
+                "order": 7
+            },
+            "viv_total": {
+                "long_name": "Número de viviendas",
+                "unit": "",
+                "domain": "texto",
+                "order": 8
+            },
+            "ano_pgirh": {
+                "long_name": "Año PGIRH",
+                "unit": "",
+                "domain": "texto",
+                "order": 9
+            },
+            "san_total": {
+                "long_name": "Viviendas con Saneamiento",
+                "unit": "",
+                "domain": "texto",
+                "order": 10
+            },
+            "abas_total": {
+                "long_name": "Familias con Abastecimiento",
+                "unit": "",
+                "domain": "texto",
+                "order": 10
+            },
+            "junta_agua": {
+                "long_name": "¿Hay junta de agua?",
+                "unit": "",
+                "domain": "texto",
+                "order": 10
+            }
+        },
+        "onEachFeature": "pop_Comunidades",
+        "pointToLayer": "doPointToLayerComunidadesAbast"
+    },
+    {
+        "id": "Comunidades_Points",
+        "shp": "Comunidades_Points",
+        "filter": "nombre",
+        "fields": {"nombre": "label"},
+        "pointToLayer": "doPointToLayerComunidades_Points",
+        "farZoom": 13
+    }
+]
