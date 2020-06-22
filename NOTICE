@@ -1,0 +1,16 @@
+Estas son las dependecias y licencias usadas en el visor. Se incluyen únicamente aquellas dependencias usadas por la aplicación y no dependencias de desarrollo.
+
+Todas ellas son compatibles con la AGPL usada para licenciar la aplicación
+
+* Leaflet Control Search v2.3.7. Copyright(c) 2017 Stefano Cudini. MIT license. https://github.com/stefanocudini/leaflet-search
+* Autolinker.js V0.11.0. Copyright(c) 2014 Gregory Jacobs. MIT license. https://github.com/gregjacobs/Autolinker.js
+* Backbone.js v1.4.0. Copyright(c) 2010-2019 Jeremy Ashkenas and DocumentCloud. MIT license. https://backbonejs.org/
+* jQuery v1.12. Copyright OpenJS Foundation and other contributors. MIT license. https://github.com/jquery/jquery
+* leaflet-sidebar. v0.2.2. Copyright (c) 2013 Tobias Bieniek. MIT license. https://github.com/Turbo87/leaflet-sidebar
+* Leaflet.label, Copyright  (c) 2012-2013, Jacob Toye, Smartrak. MIT license. https://github.com/Leaflet/Leaflet.label
+* leaflet-groupedlayercontrol v0.6.1. Copyright 2013 Ishmael Smyrnow. MIT license. https://github.com/ismyrnow/leaflet-groupedlayercontrol
+* Leaflet v0.7.7.  (c) 2010-2013, Vladimir Agafonkin. (c) 2010-2011, CloudMade. BSD-2-Clause License. http://leafletjs.com
+* leaflet-hash v0.2.1. Copyright (c) 2013 Michael Lawrence Evans. MIT license. https://github.com/mlevans/leaflet-hash
+* underscore v1.10.2. Copyright (c) 2009-2020 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors. MIT license. https://github.com/jashkenas/underscore
+
+
