@@ -24,6 +24,6 @@ package-lock.json
 
 
 # Project
-
+data/
 
 # Ignore for Formatters and Linters
