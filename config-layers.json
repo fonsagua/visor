@@ -233,6 +233,7 @@
         "shp": "Comunidades_Points",
         "filter": "nombre",
         "fields": {"nombre": "label"},
+        "onEachFeature": "pop_Comunidades",
         "pointToLayer": "doPointToLayerComunidades_Points",
         "farZoom": 13
     }

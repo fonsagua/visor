@@ -30,7 +30,7 @@ function normalizeFileName(text) {
 
 function pop_getMyValue(feature, short_name, long_name) {
     var value =
-        feature.properties[short_name] !== null
+        feature.properties[short_name] != null // null or undefined
             ? Autolinker.link(String(feature.properties[short_name]))
             : "-";
     value = value === 0 || value === "0" ? "-" : value;

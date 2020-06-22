@@ -10,7 +10,7 @@ var hash = new L.Hash(map);
 
 var feature_group = new L.featureGroup([]);
 
-var basemap0 = L.tileLayer("http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+var basemap0 = L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
     attribution:
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 19,
